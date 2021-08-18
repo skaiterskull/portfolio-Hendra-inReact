@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Project } from "./components/sections/project/Project";
 import { About } from "./components/sections/about/About";
 import { Footer } from "./components/sections/footer/Footer";
+import { Contact } from "./components/contact/Contact";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Skill />
       <Project />
       <About />
+      <Contact />
       <Footer />
     </div>
   );
