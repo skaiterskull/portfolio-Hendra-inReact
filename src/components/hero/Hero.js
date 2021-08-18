@@ -6,16 +6,16 @@ import bg1 from "../../assets/img/bg1.png";
 
 export const Hero = () => {
   return (
-    <div className="hero">
+    <div id="/" className="hero">
       <TopNavBar />
       <Container>
         <Row className="mt-5">
-          <Col md="6">
+          <Col md="6" className="text-center">
             <div className="order-md-2">
-              <img src={bg1} alt="hendra" />
+              <img src={bg1} width="80%" height="80%" alt="hendra" />
             </div>
           </Col>
-          <Col md="6">
+          <Col md="6" className="text-center">
             <div className="info mt-5">
               <h1>Hi, I am Hendra Wijaya</h1>
               <p>

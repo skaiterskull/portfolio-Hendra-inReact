@@ -1,11 +1,11 @@
 import React from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import "./topNavbar.css";
 import logo from "../../assets/img/logo-removebg-preview.png";
 
 export const TopNavBar = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="transparent" expand="lg">
       <Container>
         <Navbar.Brand href="/">
           <img src={logo} width="100px" alt="logo"></img>

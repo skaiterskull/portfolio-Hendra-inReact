@@ -4,21 +4,22 @@ import { SectionTitle } from "../../section-title/SectionTitle";
 import pj1 from "../../../assets/img/prank_calculator.png";
 import pj2 from "../../../assets/img/todolist.png";
 import pj3 from "../../../assets/img/portfolio.png";
+import "./projectStyle.css";
 
 export const Project = () => {
   return (
-    <div id="skill" className="py-5">
+    <div id="projects" className="py-5">
       <SectionTitle title="Projects" />;
       <Container>
         {/*Project 1==================================================== */}
 
         <Row className="mb-5">
-          <Col md="6">
+          <Col md="6" className="mb-sm-4">
             <img src={pj1} width="100%" alt="Prank Calculator" />
           </Col>
           <Col md="6">
             <div class="fs-2 fw-bold">
-              Not to do task lists |
+              Prank Calculator |
               <a href="" target="_blank">
                 <i class="fab fa-github-alt"></i>
               </a>
@@ -36,7 +37,7 @@ export const Project = () => {
         {/* Project 2=============================================*/}
 
         <Row className="mb-5">
-          <Col md="6" className="order-md-2">
+          <Col md="6" className="order-md-2 mb-sm-4">
             <img src={pj2} width="100%" alt="Not to do list Project " />
           </Col>
           <Col md="6" className="order-md-1">
@@ -59,7 +60,7 @@ export const Project = () => {
         {/* Project 3============================================= */}
 
         <Row className="mb-5">
-          <Col md="6">
+          <Col md="6" className="mb-sm-4">
             <img src={pj3} width="100%" alt="Portfolio Project" />
           </Col>
           <Col md="6">

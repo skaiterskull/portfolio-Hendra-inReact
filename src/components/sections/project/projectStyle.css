@@ -1,0 +1,9 @@
+#projects {
+  background: url(../../../assets/img/project-background.jpg);
+  color: white;
+}
+
+#projects img {
+  box-shadow: 15px 15px #888888;
+  border-radius: 10px;
+}
