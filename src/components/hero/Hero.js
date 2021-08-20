@@ -6,7 +6,7 @@ import bg1 from "../../assets/img/bg1.png";
 
 export const Hero = () => {
   return (
-    <div id="/" className="hero">
+    <div id="hero" className="hero">
       <TopNavBar />
       <Container>
         <Row className="mt-5">
