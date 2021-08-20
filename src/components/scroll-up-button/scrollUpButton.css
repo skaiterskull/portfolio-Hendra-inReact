@@ -1,0 +1,16 @@
+.scroll-up-btn a {
+  text-decoration: none;
+  color: blue;
+  font-size: 4rem;
+  padding: 0;
+  margin: 0;
+}
+
+.scroll-up-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+}
