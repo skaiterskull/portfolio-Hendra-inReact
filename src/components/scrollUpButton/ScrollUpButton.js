@@ -1,12 +1,10 @@
 import React from "react";
 import "./scrollUpButton.css";
 
-export const ScrollUpButton = ({ page }) => {
+export const ScrollUpButton = ({}) => {
   return (
     <div className="scroll-up-btn">
-      <a href={page}>
-        <i className="fas fa-arrow-circle-up"></i>
-      </a>
+      <i className="fas fa-arrow-circle-up"></i>
     </div>
   );
 };

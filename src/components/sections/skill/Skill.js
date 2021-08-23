@@ -1,6 +1,7 @@
 import React from "react";
 import { SectionTitle } from "../../section-title/SectionTitle";
 import { Container, Row, Col } from "react-bootstrap";
+import { DefaultLayout } from "../../layout/DefaultLayout";
 
 export const Skill = () => {
   return (
