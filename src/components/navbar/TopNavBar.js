@@ -11,7 +11,7 @@ export const TopNavBar = () => {
       <Container>
         <LinkContainer to="/">
           <Navbar.Brand>
-            <img src={logo} width="100px" alt="logo"></img>
+            <img src={logo} width="80px" alt="logo"></img>
           </Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
