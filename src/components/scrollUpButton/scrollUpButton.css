@@ -1,0 +1,7 @@
+.scroll-up-btn {
+  font-size: 4rem;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  color: red;
+}

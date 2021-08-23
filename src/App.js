@@ -5,32 +5,52 @@ import { Skill } from "./components/sections/skill/Skill";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Project } from "./components/sections/project/Project";
 import { About } from "./components/sections/about/About";
-import { Footer } from "./components/sections/footer/Footer";
-import { Contact } from "./components/contact/Contact";
-import { ScrollUpButton } from "./components/scroll-up-button/ScrollUpButton";
+import { ScrollUpButton } from "./components/scrollUpButton/ScrollUpButton";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { DefaultLayout } from "./components/layout/DefaultLayout";
 
 function App() {
-  const [upBtn, setUpBtn] = useState("visible");
-  const detectScreen = () => {
-    if (window.pageYOffset < 600) {
-      setUpBtn("hidden");
-    } else {
-      setUpBtn("visible");
-    }
-  };
+  const [upBtn, setUpBtn] = useState("hidden");
 
-  window.addEventListener("scroll", detectScreen);
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 600) {
+      setUpBtn("visible");
+    } else {
+      setUpBtn("false");
+    }
+  });
+  // const handleOnBtnUpClicked = () => {};
 
   return (
     <div>
-      <Hero />
-      <Skill />
-      <Project />
-      <About />
-
-      <Contact />
-      <Footer />
-      {upBtn == "visible" && <ScrollUpButton page="#hero" />}
+      <Router>
+        <Switch>
+          <Route
+            exact
+            path="/skills"
+            children={<DefaultLayout children={<Skill />}></DefaultLayout>}
+          ></Route>
+          <Route
+            exact
+            path="/projects"
+            children={<DefaultLayout children={<Project />}></DefaultLayout>}
+          ></Route>
+          <Route
+            exact
+            path="/about"
+            children={<DefaultLayout children={<About />}></DefaultLayout>}
+          ></Route>
+          <Route exact path="/">
+            <Hero />
+          </Route>
+          <Route path="/">
+            <h1>404 Page not found</h1>
+          </Route>
+        </Switch>
+      </Router>
+      {/* {upBtn == "visible" && (
+        <ScrollUpButton handleOnBtnUpClicked={handleOnBtnUpClicked} />
+      )} */}
     </div>
   );
 }
